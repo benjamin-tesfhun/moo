@@ -18,6 +18,6 @@ from django.urls import path
 from deplotestapp import views
 
 urlpatterns = [
+    path('',views.index.as_view(),name='home'),
     path('admin/', admin.site.urls),
-    path('',views.index.as_view(),name='home')
 ]
